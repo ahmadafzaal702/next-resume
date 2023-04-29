@@ -29,7 +29,9 @@ const ProExperience = ({ data }: { data: proExpInterface }) => {
                 </Link>
                 <p className="mt-3">{item.description}</p>
                 <Link href={`/experience/${item.slug}`}>
-                  <p className="text-black mt-3 font-semibold">Read More</p>
+                  <p className="text-black mt-3 font-bold underline">
+                    Read More
+                  </p>
                 </Link>
               </div>
             );
