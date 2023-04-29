@@ -1,4 +1,5 @@
 // next imports
+import Link from "next/link";
 
 // other imports
 import { proExpInterface } from "@/data/resume-data";
@@ -23,7 +24,9 @@ const ProExperience = ({ data }: { data: proExpInterface }) => {
                   item.current === true ? "border-green" : "border-grey"
                 } `}
               >
-                <h4 className="uppercase">{item.role}</h4>
+                <Link href={`/experience/${item.slug}`}>
+                  <h4 className="uppercase">{item.role}</h4>
+                </Link>
                 <p className="mt-3">{item.description}</p>
               </div>
             );

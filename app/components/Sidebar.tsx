@@ -1,5 +1,6 @@
 // next imports
 import Image from "next/image";
+import Link from "next/link";
 
 // other imports
 import afzaalPic from "@/assests/afzaal.jpg";
@@ -24,7 +25,9 @@ const Sidebar = () => {
             alt="Afzaal Ahmad"
             className="rounded-full mb-5"
           />
-          <h1 className="mb-2">{name}</h1>
+          <Link href={"/"}>
+            <h1 className="mb-2">{name}</h1>
+          </Link>
           <h2 className="mb-8">{role}</h2>
           <p className="mb-2">{education[0]}</p>
           <p className="mb-2">{education[1]}</p>
